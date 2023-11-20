@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Feed from "./components/Feed";
 import Header from "./components/Header";
 import SearchResult from "./components/SearchResult";
 import Test from "./components/Test";
@@ -14,8 +13,8 @@ function App() {
         <div className="flex flex-col h-full">
           <Header />
           <Routes>
-            <Route path="/" element={<Feed />} />
-            <Route path="/test" element={<Test />} />
+            {/* <Route path="/" element={<Feed />} /> */}
+            <Route path="/" element={<Test />} />
             <Route
               path="/searchResult/:searchQuery"
               element={<SearchResult />}
